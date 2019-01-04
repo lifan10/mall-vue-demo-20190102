@@ -6,6 +6,8 @@ import router from './router'
 import iview from 'iview'
 import 'iview/dist/styles/iview.css'
 
+import '@/icons' // icon
+
 Vue.use(iview)
 Vue.config.productionTip = false
 

@@ -2,6 +2,9 @@
 <div>
   <Card class="login-card">
     <Form ref="formInline" :model="formInline" :rules="ruleInline">
+      <div style="text-align: center">
+        <svg-icon icon-class="login-mall" style="width: 56px;height: 56px;color: #409EFF"></svg-icon>
+      </div>
       <FormItem prop="user">
         <i-input type="text" v-model="formInline.user" placeholder="Username">
           <Icon type="ios-person-outline" slot="prepend"></Icon>
@@ -23,7 +26,7 @@
 
 <script>
 export default {
-  name: 'index',
+  name: 'login',
   data () {
     return {
       formInline: {
