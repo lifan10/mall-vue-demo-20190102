@@ -13,4 +13,4 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 EXPOSE 80
 RUN cp -r dist/* /var/www/html \
     && rm -rf /user/src/app
-CMD ["nginx","-g","daemon off;", "curl -d 'sendkey=7854-63e18e9bff729d17329583a220bb7a15&text=mall_vue_build_success&desp=http://lujiahao.ml:9999' 'https://pushbear.ftqq.com/sub'"]
+CMD ["nginx","-g","daemon off;"]
