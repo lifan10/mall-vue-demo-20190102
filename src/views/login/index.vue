@@ -3,7 +3,8 @@
   <Card class="login-card">
     <Form ref="formInline" :model="formInline" :rules="ruleInline">
       <div style="text-align: center">
-        <svg-icon icon-class="login-mall" style="width: 56px;height: 56px;color: #409EFF"></svg-icon>
+        <svg-icon icon-class="login-mall" style="width: 56px;height: 56px;color: #7271dc"></svg-icon>
+        <h2 class="h2-title">mall-vue-demo</h2>
       </div>
       <FormItem prop="user">
         <i-input type="text" v-model="formInline.user" placeholder="Username">
@@ -16,7 +17,7 @@
         </i-input>
       </FormItem>
       <FormItem>
-        <Button type="primary" style="width: 306px;" @click="handleSubmit">登录</Button>
+        <Button type="primary" style="width: 306px;background-color: #7271dc;border-color:#7271dc" @click="handleSubmit">登录</Button>
       </FormItem>
     </Form>
   </Card>
@@ -30,8 +31,8 @@ export default {
   data () {
     return {
       formInline: {
-        user: '',
-        password: ''
+        user: 'admin',
+        password: '123456'
       },
       ruleInline: {
         user: [
@@ -67,6 +68,9 @@ export default {
    top: 0;
    height: 300px;
    margin-top: 200px;
-
+ }
+ .h2-title {
+   margin: 16px auto;
+   color: #7271dc;
  }
 </style>
